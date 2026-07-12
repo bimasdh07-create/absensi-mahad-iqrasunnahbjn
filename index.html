@@ -133,9 +133,30 @@
             <h3 style="font-size: 0.95rem; margin-bottom: 15px; color: #16a085; text-align: center;">Form Input Manual Tata Usaha (TU)</h3>
             <form id="formTU" onsubmit="kirimAbsenManualTU(event)">
                 <div class="form-group">
-                    <label for="tu_nama">Pilih Nama Ustadz / Ustadzah</label>
-                    <input type="text" id="tu_nama" required placeholder="Contoh: Ustadz Abu Bakar">
-                </div>
+            <label for="nama">Pilih Nama Anda</label>
+            <select id="nama" required>
+                <option value="" disabled selected>-- Pilih Nama Anda --</option>
+                <option value="SAIDI, M.Pd">SAIDI, M.Pd</option>
+                <option value="ADY MUHIBBUDDIN, S.T">ADY MUHIBBUDDIN, S.T</option>
+                <option value="IMAM SYAFI'I, S.Pd">IMAM SYAFI'I, S.Pd</option>
+                <option value="M. EDI SANTOSO, S.M">M. EDI SANTOSO, S.M</option>
+                <option value="MOCH. SULTON ULUM BIMASDHOM, S.Pd">MOCH. SULTON ULUM BIMASDHOM, S.Pd</option>
+                <option value="NURILROCHMATIN, M.Pd">NURILROCHMATIN, M.Pd</option>
+                <option value="HETI PUJI LESTARI, S.Pd">HETI PUJI LESTARI, S.Pd</option>
+                <option value="FATHIMAH, S.Pd">FATHIMAH, S.Pd</option>
+                <option value="AMILATUR ROFIAH">AMILATUR ROFIAH</option>
+                <option value="IKE ROHMAWATI, S.TP">IKE ROHMAWATI, S.TP</option>
+                <option value="SITI RODHIYAH, S.Pd">SITI RODHIYAH, S.Pd</option>
+                <option value="NURUL FITRIYA R, S.H">NURUL FITRIYA R, S.H</option>
+                <option value="ADINDA ELSA SABILA">ADINDA ELSA SABILA</option>
+                <option value="HASNA NAJLA HANIFAH">HASNA NAJLA HANIFAH</option>
+                <option value="JANIA PUTRI SALEHA">JANIA PUTRI SALEHA</option>
+                <option value="JAZILAH">JAZILAH</option>
+                <option value="OKTAVIA NUR R.">OKTAVIA NUR R.</option>
+                <option value="IZZATUL UMMAH">IZZATUL UMMAH</option>
+                <option value="ELSYA NUR HASANAH">ELSYA NUR HASANAH</option>
+            </select>
+        </div>
                 <div class="form-group">
                     <label for="tu_status">Status</label>
                     <select id="tu_status" onchange="aturFormKeteranganTU()">
