@@ -160,5 +160,24 @@
 </div>
 
 <script src="script.js"></script>
+<script>
+  // 1. Matikan klik kanan
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert('Maaf, konten ini dilindungi!'); // Hapus baris ini jika tidak ingin memunculkan peringatan text
+  });
+
+  // 2. Matikan shortcut keyboard pembuka Inspect (F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U)
+  document.addEventListener('keydown', function(e) {
+    if (
+      e.key === 'F12' || 
+      (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) || 
+      (e.ctrlKey && e.key === 'u')
+    ) {
+      e.preventDefault();
+      return false;
+    }
+  });
+</script>
 </body>
 </html>
