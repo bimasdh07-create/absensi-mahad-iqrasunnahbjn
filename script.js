@@ -117,7 +117,7 @@ function kirimDataAbsen(event) {
 function bukaFiturLaporan() {
     const passAdmin = prompt("Masukkan Kata Sandi Pengurus Ma'had:");
     if (passAdmin === "adminmahad") {
-        window.open("https://google.com", "_blank");
+        window.open("https://docs.google.com/spreadsheets/d/1UONxXJj9rSn09WkhZcAQAH1pQMoeUElfumaJfxM2vS0/edit?gid=1740273116#gid=1740273116", "_blank");
     } else {
         alert("Kata sandi salah!");
     }
